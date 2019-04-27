@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alim.cleanmaster.Home">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/header_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/scanButton"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/scan_button_rounded"
+            android:clickable="true"
+            android:text="Scan Now"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/scan_button2" />
+
+        <com.github.lzyzsd.circleprogress.ArcProgress
+            android:id="@+id/totalRam"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginBottom="32dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            app:arc_bottom_text_size="20sp"
+            app:arc_finished_color="#00FF00"
+            app:arc_text_color="#FFF"
+            app:arc_unfinished_color="#FFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.457"
+            custom:arc_bottom_text="RAM"
+            app:arc_suffix_text_size="20sp"
+            custom:arc_progress="45" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="?android:attr/listDivider"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.github.lzyzsd.circleprogress.ArcProgress
+            android:id="@+id/externalFreeMem"
+            android:layout_width="155dp"
+            android:layout_height="151dp"
+            android:layout_marginBottom="32dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginStart="48dp"
+            android:rotation="50"
+            app:arc_angle="130"
+            app:arc_finished_color="#00FF00"
+            app:arc_progress="45"
+            app:arc_text_color="@color/headerColor"
+            app:arc_unfinished_color="#FFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/divider3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.504" />
+
+        <com.github.lzyzsd.circleprogress.ArcProgress
+            android:id="@+id/internalFreeMem"
+            android:layout_width="155dp"
+            android:layout_height="151dp"
+            android:layout_marginBottom="32dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginRight="48dp"
+            android:rotation="300"
+            app:arc_angle="130"
+            app:arc_finished_color="#00FF00"
+            app:arc_text_color="@color/headerColor"
+            app:arc_unfinished_color="#FFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/divider3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.503"
+            custom:arc_bottom_text=""
+            custom:arc_progress="45" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Internal Storage"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/scanButton"
+            app:layout_constraintEnd_toStartOf="@+id/scanButton" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="External Storage"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/scanButton"
+            app:layout_constraintStart_toEndOf="@+id/scanButton" />
+        <TextView
+            android:id="@+id/txtExternalPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="50"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="@+id/internalFreeMem"
+            app:layout_constraintEnd_toStartOf="@+id/totalRam"
+            app:layout_constraintStart_toStartOf="@+id/internalFreeMem"
+            app:layout_constraintTop_toTopOf="@+id/internalFreeMem" />
+
+        <TextView
+            android:id="@+id/txtInternalPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="50"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="@+id/externalFreeMem"
+            app:layout_constraintEnd_toEndOf="@+id/externalFreeMem"
+            app:layout_constraintStart_toEndOf="@+id/totalRam"
+            app:layout_constraintTop_toTopOf="@+id/externalFreeMem" />
+
+        <TextView
+            android:id="@+id/textV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:text="%"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/internalFreeMem"
+            app:layout_constraintEnd_toStartOf="@+id/totalRam"
+            app:layout_constraintStart_toEndOf="@+id/txtExternalPercent"
+            app:layout_constraintTop_toTopOf="@+id/internalFreeMem" />
+
+        <TextView
+            android:id="@+id/tttt"
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:text="%"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/externalFreeMem"
+            app:layout_constraintStart_toEndOf="@+id/txtInternalPercent"
+            app:layout_constraintTop_toTopOf="@+id/externalFreeMem"
+            app:layout_constraintVertical_bias="0.621" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+        <ImageView
+            android:id="@+id/imgJunk"
+            android:layout_width="200dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="32dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            app:layout_constraintEnd_toStartOf="@+id/imgImages"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/delete_icon" />
+
+        <ImageView
+            android:id="@+id/imgImages"
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="32dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/images_icon" />
+
+        <ImageView
+            android:id="@+id/imgFiles"
+            android:layout_width="200dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="32dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgImages"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/files_icon" />
+
+        <ImageView
+            android:id="@+id/imgAppLock"
+            android:layout_width="200dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            app:layout_constraintEnd_toStartOf="@+id/imgBoost"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgJunk"
+            app:srcCompat="@drawable/applock_icon" />
+
+        <ImageView
+            android:id="@+id/imgBoost"
+            android:layout_width="200dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="32dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgImages"
+            app:srcCompat="@drawable/booster_icon" />
+
+        <ImageView
+            android:id="@+id/imgNotification"
+            android:layout_width="200dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgBoost"
+            app:layout_constraintTop_toBottomOf="@+id/imgFiles"
+            app:srcCompat="@drawable/cpu_cooler" />
+
+        <ImageView
+            android:id="@+id/imgFirewall"
+            android:layout_width="200dp"
+            android:layout_height="130dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgBoost"
+            app:srcCompat="@drawable/firewall_icon" />
+
+        <ProgressBar
+            android:id="@+id/homeProgressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

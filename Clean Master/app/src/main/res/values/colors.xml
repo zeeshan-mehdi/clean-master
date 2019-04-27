@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryLite">#503F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#3F51B5</color>
+    <color name="green">#00FF00</color>
+    <color name="green2">#008000</color>
+    <color name="blue">	#0000e6	</color>
+    <color name="defaultGreen">	#23b176</color>
+    <color name="textColor">	#FFFFFF</color>
+    <color name="defaultGreen2">#149F5B</color>
+    <color name="headerColor">#3F51B5</color>
+    <color name="black">#000000</color>
+    <color name="selected">#FF7F00</color>
+    <color name="logo_background">#FFFFFF</color>
+    <color name="gray"> #d3d3d3</color>
+    <color name="lightGray">#C0C0C0</color>
+    <color name="homeWhite">#f5f5f5</color>
+    <color name="materialLime">#00ff00</color>
+    <color name="materialOrange">#ffa500</color>
+    <color name="lockBackgroundColor">#00ACD6</color>
+    <color name="locksidesColor">#474747</color>
+
+    <color name="boostedBefore">#897f4b</color>
+    <color name="boostedAfter">#bca42a</color>
+
+
+    <color name="bright_pink">#FF007F</color>
+    <color name="red">#FF0000</color>
+    <color name="orange">#FF7F00</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="chartreuse">#7FFF00</color>
+    <color name="spring_green">#00FF7F</color>
+    <color name="cyan">#00FFFF</color>
+    <color name="azure">#007FFF</color>
+    <color name="violet">#7F00FF</color>
+    <color name="magenta">#FF00FF</color>
+
+    <array name="rainbow">
+        <item>@color/bright_pink</item>
+        <item>@color/red</item>
+        <item>@color/orange</item>
+        <item>@color/yellow</item>
+        <item>@color/chartreuse</item>
+        <item>@color/green</item>
+        <item>@color/spring_green</item>
+        <item>@color/cyan</item>
+        <item>@color/azure</item>
+        <item>@color/blue</item>
+        <item>@color/violet</item>
+        <item>@color/magenta</item>
+    </array>
+
+
+    <color name="colorTealPrimary">#009688</color>
+    <color name="colorTealPrimaryDark">#00796B</color>
+    <color name="colorTealAccent">#FF5722</color>
+    <color name="colorTealOn">#009688</color>
+    <color name="colorTealOff">#FF5722</color>
+
+    <color name="colorBluePrimary">#2196F3</color>
+    <color name="colorBluePrimaryDark">#1976D2</color>
+    <color name="colorBlueAccent">#FF5722</color>
+    <color name="colorBlueOn">#2196F3</color>
+    <color name="colorBlueOff">#FF5722</color>
+
+    <color name="colorPurplePrimary">#9C27B0</color>
+    <color name="colorPurplePrimaryDark">#7B1FA2</color>
+    <color name="colorPurpleAccent">#FF5252</color>
+    <color name="colorPurpleOn">#9C27B0</color>
+    <color name="colorPurpleOff">#FF5252</color>
+
+    <color name="colorAmberPrimary">#FFC107</color>
+    <color name="colorAmberPrimaryDark">#FFA000</color>
+    <color name="colorAmberAccent">#448AFF</color>
+    <color name="colorAmberOn">#448AFF</color>
+    <color name="colorAmberOff">#FFC107</color>
+
+    <color name="colorOrangePrimary">#FF5722</color>
+    <color name="colorOrangePrimaryDark">#E64A19</color>
+    <color name="colorOrangeAccent">#607D8B</color>
+    <color name="colorOrangeOn">#607D8B</color>
+    <color name="colorOrangeOff">#FF5722</color>
+
+    <color name="colorGreenPrimary">#4CAF50</color>
+    <color name="colorGreenPrimaryDark">#388E3C</color>
+    <color name="colorGreenAccent">#8BC34A</color>
+    <color name="colorGreenOn">#8BC34A</color>
+    <color name="colorGreenOff">#F44336</color>
+
+    <color name="colorSend">#FF0000</color>
+    <color name="colorReceive">#0000FF</color>
+
+    <color name="colorGrayed">#AAAAAA</color>
+    <color name="centerColor">#488AC8</color>
+
+</resources>

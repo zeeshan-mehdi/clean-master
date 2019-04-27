@@ -1,0 +1,221 @@
+<resources>
+    <attr name="colorOn" format="reference" />
+    <attr name="colorOff" format="reference" />
+    <attr name="expander" format="reference" />
+    <attr name="iconQueue" format="reference" />
+    <attr name="iconMetered" format="reference" />
+    <attr name="iconSettings" format="reference" />
+    <attr name="iconDatasaver" format="reference" />
+    <attr name="iconLaunch" format="reference" />
+    <attr name="iconDelete" format="reference" />
+    <attr name="iconPlay" format="reference" />
+    <attr name="iconPause" format="reference" />
+
+    <style name="AppDialog" parent="Theme.AppCompat.Dialog">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="MyDialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="BaseThemeDark" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="expander">@drawable/expander_black</item>
+        <item name="iconQueue">@drawable/ic_hourglass_empty_black_24dp</item>
+        <item name="iconMetered">@drawable/ic_attach_money_black_24dp</item>
+        <item name="iconSettings">@drawable/ic_settings_black_24dp</item>
+        <item name="iconDatasaver">@drawable/ic_perm_data_setting_black_24dp</item>
+        <item name="iconLaunch">@drawable/ic_launch_black_24dp</item>
+        <item name="iconDelete">@drawable/ic_delete_black_24dp</item>
+        <item name="iconPlay">@drawable/ic_play_arrow_black_24dp</item>
+        <item name="iconPause">@drawable/ic_pause_black_24dp</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/headerColor</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/defaultGreen2</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="CleanedTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/headerColor</item>
+        <item name="colorPrimaryDark">@color/colorCleaned</item>
+        <item name="colorAccent">@color/defaultGreen2</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+
+    <style name="AppTheme2" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/headerColor</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/defaultGreen2</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <style name="BaseThemeLight" parent="Theme.AppCompat">
+        <item name="expander">@drawable/expander_white</item>
+        <item name="iconQueue">@drawable/ic_hourglass_empty_white_24dp</item>
+        <item name="iconMetered">@drawable/ic_attach_money_white_24dp</item>
+        <item name="iconSettings">@drawable/ic_settings_white_24dp</item>
+        <item name="iconDatasaver">@drawable/ic_perm_data_setting_white_24dp</item>
+        <item name="iconLaunch">@drawable/ic_launch_white_24dp</item>
+        <item name="iconDelete">@drawable/ic_delete_white_24dp</item>
+        <item name="iconPlay">@drawable/ic_play_arrow_white_24dp</item>
+        <item name="iconPause">@drawable/ic_pause_white_24dp</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="AppThemeTeal" parent="BaseThemeDark">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/defaultGreen2</item>
+        <item name="colorOn">@color/colorTealOn</item>
+        <item name="colorOff">@color/colorTealOff</item>
+    </style>
+
+    <style name="AppThemeTealDark" parent="BaseThemeLight">
+        <item name="colorPrimary">@color/headerColor</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/defaultGreen2</item>
+        <item name="colorOn">@color/headerColor</item>
+        <item name="colorOff">@color/colorTealOff</item>
+    </style>
+
+    <style name="AppThemeBlue" parent="BaseThemeDark">
+        <item name="colorPrimary">@color/colorBluePrimary</item>
+        <item name="colorPrimaryDark">@color/colorBluePrimaryDark</item>
+        <item name="colorAccent">@color/colorBlueAccent</item>
+        <item name="colorOn">@color/colorBlueOn</item>
+        <item name="colorOff">@color/colorBlueOff</item>
+    </style>
+
+    <style name="AppThemeBlueDark" parent="BaseThemeLight">
+        <item name="colorPrimary">@color/colorBluePrimary</item>
+        <item name="colorPrimaryDark">@color/colorBluePrimaryDark</item>
+        <item name="colorAccent">@color/colorBlueAccent</item>
+        <item name="colorOn">@color/colorBlueOn</item>
+        <item name="colorOff">@color/colorBlueOff</item>
+    </style>
+
+    <style name="AppThemePurple" parent="BaseThemeDark">
+        <item name="colorPrimary">@color/colorPurplePrimary</item>
+        <item name="colorPrimaryDark">@color/colorPurplePrimaryDark</item>
+        <item name="colorAccent">@color/colorPurpleAccent</item>
+        <item name="colorOn">@color/colorPurpleOn</item>
+        <item name="colorOff">@color/colorPurpleOff</item>
+    </style>
+
+    <style name="AppThemePurpleDark" parent="BaseThemeLight">
+        <item name="colorPrimary">@color/colorPurplePrimary</item>
+        <item name="colorPrimaryDark">@color/colorPurplePrimaryDark</item>
+        <item name="colorAccent">@color/colorPurpleAccent</item>
+        <item name="colorOn">@color/colorPurpleOn</item>
+        <item name="colorOff">@color/colorPurpleOff</item>
+    </style>
+
+    <style name="AppThemeAmber" parent="BaseThemeDark">
+        <item name="colorPrimary">@color/colorAmberPrimary</item>
+        <item name="colorPrimaryDark">@color/colorAmberPrimaryDark</item>
+        <item name="colorAccent">@color/colorAmberAccent</item>
+        <item name="colorOn">@color/colorAmberOn</item>
+        <item name="colorOff">@color/colorAmberOff</item>
+    </style>
+
+    <style name="AppThemeAmberDark" parent="BaseThemeLight">
+        <item name="colorPrimary">@color/colorAmberPrimary</item>
+        <item name="colorPrimaryDark">@color/colorAmberPrimaryDark</item>
+        <item name="colorAccent">@color/colorAmberAccent</item>
+        <item name="colorOn">@color/colorAmberOn</item>
+        <item name="colorOff">@color/colorAmberOff</item>
+    </style>
+
+    <style name="AppThemeOrange" parent="BaseThemeDark">
+        <item name="colorPrimary">@color/colorOrangePrimary</item>
+        <item name="colorPrimaryDark">@color/colorOrangePrimaryDark</item>
+        <item name="colorAccent">@color/colorOrangeAccent</item>
+        <item name="colorOn">@color/colorOrangeOn</item>
+        <item name="colorOff">@color/colorOrangeOff</item>
+    </style>
+
+    <style name="AppThemeOrangeDark" parent="BaseThemeLight">
+        <item name="colorPrimary">@color/colorOrangePrimary</item>
+        <item name="colorPrimaryDark">@color/colorOrangePrimaryDark</item>
+        <item name="colorAccent">@color/colorOrangeAccent</item>
+        <item name="colorOn">@color/colorOrangeOn</item>
+        <item name="colorOff">@color/colorOrangeOff</item>
+    </style>
+
+    <style name="AppThemeGreen" parent="BaseThemeDark">
+        <item name="colorPrimary">@color/colorGreenPrimary</item>
+        <item name="colorPrimaryDark">@color/colorGreenPrimaryDark</item>
+        <item name="colorAccent">@color/colorGreenAccent</item>
+        <item name="colorOn">@color/colorGreenOn</item>
+        <item name="colorOff">@color/colorGreenOff</item>
+    </style>
+
+    <style name="AppThemeGreenDark" parent="BaseThemeLight">
+        <item name="colorPrimary">@color/colorGreenPrimary</item>
+        <item name="colorPrimaryDark">@color/colorGreenPrimaryDark</item>
+        <item name="colorAccent">@color/colorGreenAccent</item>
+        <item name="colorOn">@color/colorGreenOn</item>
+        <item name="colorOff">@color/colorGreenOff</item>
+    </style>
+
+    <style name="checkBoxStyle" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/gray</item>
+        <item name="controlBackground">@color/white</item>
+        <item name="colorControlActivated">@color/defaultGreen2</item>
+    </style>
+
+    <style name="tallerBarStyle" parent="@android:style/Widget.SeekBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progressbar_style</item>
+        <item name="android:indeterminateDrawable">@drawable/horizontal_progressbar</item>
+        <item name="android:minHeight">8dip</item>
+        <item name="android:maxHeight">25dip</item>
+
+    </style>
+
+
+    <style name="ProgressBarStyle">
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="brownTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="colorPrimary">@android:color/holo_orange_dark</item>
+        <item name="colorPrimaryDark">@android:color/holo_orange_dark</item>
+        <item name="colorAccent">@color/defaultGreen2</item>
+    </style>
+    <style name="lightRedTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="colorPrimary">@android:color/holo_red_light</item>
+        <item name="colorPrimaryDark">@android:color/holo_red_light</item>
+        <item name="colorAccent">@color/defaultGreen2</item>
+    </style>
+    <style name="RedTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="colorPrimary">@android:color/holo_red_dark</item>
+        <item name="colorPrimaryDark">@android:color/holo_red_dark</item>
+        <item name="colorAccent">@color/defaultGreen2</item>
+    </style>
+
+
+        <style name="dialogstyle" parent="android:style/Theme.Dialog">
+            <item name="android:windowBackground">@color/black</item>
+        </style>
+
+    <color name="colorCleaned">#0254A6</color>
+</resources>
+
+
